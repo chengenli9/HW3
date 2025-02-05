@@ -1,0 +1,108 @@
+<!--Chengen Li-->
+
+<!--test-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesecake order</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--white container that holds everything-->
+    <div id="container">
+
+        <!--title-->
+        <h1>Cheesecake Order Form</h1>
+        <img src="https://www.simplyrecipes.com/thmb/KFGxJqRvPayPsGw1XGrPeCxF8q4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-No-Bake-Cheesecake-LEAD-19-db180177747b435481d8870b38893a53.jpg" alt="Cheesecake picture"><br>
+        
+        <!--contians all the topping options-->
+        <div class="toppings-container">
+        
+            <p>Choose Topping</p> 
+
+            <!--radio buttons-->
+
+            <form>
+                <label>
+                  <input type="radio" name="option" value="Plain" class="radio-options"> Plain
+                </label> <br>
+                <label>
+                  <input type="radio" name="option" value="Strawberry" class="radio-options"> Strawberry
+                </label> <br>
+                <label>
+                    <input type="radio" name="option" value="Chocolate" class="radio-options"> Chocolate
+                </label> <br>
+              </form>
+
+              <!--select options-->
+            <label for="quantity">Quanity of Toppings</label>
+            <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+        </div>
+
+        <!--end message-->
+        <p class="order-message">Thank you! Your order has been placed!</p>
+
+
+        <!--text area for instructions-->
+        <p class="notes-title">Notes</p>
+        <textarea name="" id="notes" cols="50" rows="8" placeholder="Enter any special instructions here."></textarea><br>
+
+        <!--order button-->
+        <button id="order-button">Order</button> 
+
+        <!--order summary-->
+        <ul class="order-summary">
+            <li id="toppingsDisplay">Toppings: Plain</li>
+            <li id="quantityDisplay">Quantity of toppings:</li>
+            <li id="notesDisplay">Notes: <br></li>
+        </ul>
+
+        <!--list of top orders-->
+        <div class="order-info">
+        
+            <!--drop down options-->
+            <div class="order-date-section">
+                <p class="order-txt">Orders for </p> 
+                <div class="dropdown">
+                    <button class="dropbtn">Jan</button>
+                    <div class="dropdown-content">
+                        <p class="dropdown-item">Jan</p>
+                        <p class="dropdown-item">Feb</p>
+                        <p class="dropdown-item">Mar</p>
+                        <p class="dropdown-item">Apr</p>
+                        <p class="dropdown-item">May</p>
+                        <p class="dropdown-item">Jun</p>
+                        <p class="dropdown-item">Jul</p>
+                        <p class="dropdown-item">Aug</p>
+                        <p class="dropdown-item">Sep</p>
+                        <p class="dropdown-item">Oct</p>
+                        <p class="dropdown-item">Nov</p>
+                        <p class="dropdown-item">Dec</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!--list of the top orders-->
+            <ul>
+                <li>309 Plain</li>
+                <li>151 Strawberry</li>
+                <li>69 Chocolate</li>
+            </ul>
+        </div>
+
+        
+    </div>
+
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
